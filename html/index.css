@@ -29,7 +29,10 @@ main {
   padding: 2ch;
   margin: auto;
 }
-
+p{
+  margin-left: 40px; /* Adjust left margin */
+  margin-right: 40px; /* Adjust right margin */
+}
 header {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -62,7 +65,7 @@ a:hover {
   text-decoration: underline;
 }
 .logo {
-  max-width: 17vh;
+  max-width: 20vh;
 }
 
 .unc-logo {
