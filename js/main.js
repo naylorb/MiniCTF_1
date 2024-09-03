@@ -90,32 +90,36 @@ $(document).ready(function(){
 		}
 	});
 
-	async function checkFlag(object) {
-		var id = $(object).attr('id');
-		var flag = $(object).prev('input').val();
+async function checkFlag(object) {
+    var id = $(object).attr('id');
+    var flag = $(object).prev('input').val().trim(); // Trim to remove extra spaces
 
-		if (id === 'flag2') {
-			if (flag2 === 'h3Ll0_b0B') { // Direct comparison for q4
-				alert('Congrats! You have completed this challenge.');
-				$(object).prev('input').attr('placeholder', 'Correct!');
-			} else {
-				$(object).prev('input').attr('placeholder', 'Incorrect');
-			}
-		} else {
-			// Original digest-based checking for other questions
-			var digest = await getDigest(flag);
-			var correct_digest = base64ToBytes(FLAG_DIGESTS[id]);
+    console.log('Checking flag for id:', id);
+    console.log('Input value:', flag);
 
-			$(object).prev('input').val('');
+    if (id === 'q2') {
+        if (flag === 'h3Ll0_b0B') { // Correct answer for challenge 2
+            alert('Congrats! You have completed this challenge.');
+            $(object).prev('input').attr('placeholder', 'Correct!');
+        } else {
+            $(object).prev('input').attr('placeholder', 'Incorrect');
+        }
+    } else {
+        // Original digest-based checking for other questions
+        var digest = await getDigest(flag);
+        var correct_digest = base64ToBytes(FLAG_DIGESTS[id]);
 
-			if (digestsAreEqual(digest, correct_digest)) {
-				alert('Congrats! You have completed this challenge.');
-				$(object).prev('input').attr('placeholder', 'Correct!');
-			} else {
-				$(object).prev('input').attr('placeholder', 'Incorrect');
-			}
-		}
-	}
+        $(object).prev('input').val('');
+
+        if (digestsAreEqual(digest, correct_digest)) {
+            alert('Congrats! You have completed this challenge.');
+            $(object).prev('input').attr('placeholder', 'Correct!');
+        } else {
+            $(object).prev('input').attr('placeholder', 'Incorrect');
+        }
+    }
+}
+
 	
 	$('.ctf-submit').click(function(){
 		checkFlag($(this));
