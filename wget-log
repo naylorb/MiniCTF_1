@@ -1,0 +1,4 @@
+--2024-09-02 23:33:14--  ftp://view-source/https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css
+           => ‘jquery-ui.css’
+Resolving view-source (view-source)... failed: Name or service not known.
+wget: unable to resolve host address ‘view-source’
