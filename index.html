@@ -1,162 +1,107 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Mini Challenges</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="js/index.css">
-	<!-- JQuery CDN -->
-	<script src="js/jquery.min.js"></script>
-	<!-- JQueryUI CDN -->
-	<link rel="stylesheet" href="jquery-ui.css">
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/jpg" href="49sd-compressed.png">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Mini Challenges</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="js/index.css">
+    <!-- JQuery CDN -->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQueryUI CDN -->
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="49sd-compressed.png">
 </head>
 
 <body data-new-gr-c-s-check-loaded="8.912.0" data-gr-ext-installed="">
-	<main>
-		<header>
-			<a href="https://naylorb.github.io/MiniCTF_1/index.html"><img class="logo" src="49sd_compressed.png" alt="logo"></a>
-			<h1>49<sup>th</sup> Security Division</h1>
-		</header>
-		<div>
-			<h2 class="h2"><b>What are CTF's?</b></h2>
-			<p> A Capture the Flag (CTF) competition is a type of computer 
-security competition in which a person or team is given a variety of 
-problems to complete. To receive points, the person or team must submit 
-the proper flag or solution, which is discovered through completing the 
-tasks. We've put up a little CTF for you to try out. If you're having 
-trouble finding the flag, click the hint button to assist you. </p>
-		</div>
-		<br>
-		<div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-			<h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 1: HTML</b></h2>
-			<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true">
-				<form name="challenge1" id="challenge1">
-					<p>Can you find the hidden flag on this webpage? </p>
-					<label for="flag1">Enter Flag Here: </label>
-					<input type="text" id="flag1" name="flag1" class="textbox ctf-answer" placeholder="flag_{...}">
-					<button type="button" id="q1" class="enter ctf-submit">Submit</button>
-					<br>
-					<br>
-					<button type="button" id="btnHint1" class="hints ctf-hint">Hint</button>
-					<p id="hint1" class="hint">Hint: (F12)</p>
-				</form>
-				<!--Nobody will find me here...-->
-				<!--flag_{sUbMiT_tHiS_wHoLe_LiNe}-->
-			</div>
-			<h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 2: Decode</b></h2>
-			<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
-    				<form name="challenge2" id="challenge2">
-        				<p>Can you decode the following message? </p>
-        				<p>Message: 01110101 01011111 01010010 01011111 01001000 01000000 01100011 01101011 00110011 01110010</p>
-        				<label for="flagd">Enter Password Here: </label>
-        				<input type="text" id="flagd" name="flagd" class="textbox ctf-answer" placeholder="Password">
-        				<button type="button" id="q2d" class="enter ctf-submit">Submit</button>
-        				<br>
-        				<br>
-        			<button type="button" id="btnHint2" class="hints ctf-hint">Hint</button>
-        			<p id="hint2" class="hint">Hint: Binary</p>
-    				</form>
-			</div>
+    <main>
+        <header>
+            <a href="https://naylorb.github.io/MiniCTF_1/index.html"><img class="logo" src="49sd_compressed.png" alt="logo"></a>
+            <h1>49<sup>th</sup> Security Division</h1>
+        </header>
+        <div>
+            <h2 class="h2"><b>What are CTF's?</b></h2>
+            <p> A Capture the Flag (CTF) competition is a type of computer 
+            security competition in which a person or team is given a variety of 
+            problems to complete. To receive points, the person or team must submit 
+            the proper flag or solution, which is discovered through completing the 
+            tasks. We've put up a little CTF for you to try out. If you're having 
+            trouble finding the flag, click the hint button to assist you. </p>
+        </div>
+        <br>
+        <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+            <h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 1: HTML</b></h2>
+            <div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true">
+                <form name="challenge1" id="challenge1">
+                    <p>Can you find the hidden flag on this webpage? </p>
+                    <label for="flag1">Enter Flag Here: </label>
+                    <input type="text" id="flag1" name="flag1" class="textbox ctf-answer" placeholder="flag_{...}">
+                    <button type="button" id="q1" class="enter ctf-submit">Submit</button>
+                    <br>
+                    <br>
+                    <button type="button" id="btnHint1" class="hints ctf-hint">Hint</button>
+                    <p id="hint1" class="hint">Hint: (F12)</p>
+                </form>
+                <!--Nobody will find me here...-->
+                <!--flag_{sUbMiT_tHiS_wHoLe_LiNe}-->
+            </div>
+            <h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 2: Decode</b></h2>
+            <div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+                <form name="challenge2" id="challenge2">
+                    <p>Can you decode the following message? </p>
+                    <p>Message: 01110101 01011111 01010010 01011111 01001000 01000000 01100011 01101011 00110011 01110010</p>
+                    <label for="flagd">Enter Password Here: </label>
+                    <input type="text" id="flagd" name="flagd" class="textbox ctf-answer" placeholder="Password">
+                    <button type="button" id="q2d" class="enter ctf-submit">Submit</button>
+                    <br>
+                    <br>
+                    <button type="button" id="btnHint2" class="hints ctf-hint">Hint</button>
+                    <p id="hint2" class="hint">Hint: Binary</p>
+                </form>
+            </div>
+            <h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 3: Log Analysis</b></h2>
+            <div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true">
+                <p>For this challenge you'll need this <a href="https://49sd.com/challenges_files/apache_logs" target="_blank">log file</a> </p>
+                <div id="log-analysis-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+                    <!-- Log Analysis Questions here -->
+                </div>
+            </div>
+            <h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 4: Cryptography</b></h2>
+            <div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
+                <form name="challenge4" id="challenge4">
+                    <p>Alice just sent a secret message to Bob, can you find out what they were trying to communicate? </p>
+                    <p>Encrypted Message: o3Ss0_i0I</p>
+                    <label for="flag4">Enter Text Here: </label>
+                    <input type="text" id="flag4" name="flag4" class="textbox ctf-answer" placeholder="Plain Text">
+                    <button type="button" id="q4" class="enter ctf-submit">Submit</button>
+                    <br>
+                    <br>
+                    <button type="button" id="btnHint4" class="hints ctf-hint">Hint</button>
+                    <p id="hint4" class="hint">This text is encoded using a popular Encryption technique</p>
+                </form>
+            </div>
+        </div>
+        <p style="font-size: 18px;">More challenges are on the way...</p>
+    </main>
+    <footer>
+        <div> <img class="unc-logo" src="charlotte.png" alt="logo">
+            <p>© <span id="date"></span> 49<sup>th</sup> Security Division</p>
+        </div>
+    </footer>
 
-			<h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 3: Log Analysis</b></h2>
-			<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true">
-				<p>For this challenge you'll need this <a href="https://49sd.com/challenges_files/apache_logs" target="_blank">log file</a> </p>
-				<div id="log-analysis-accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Question 1</h2>
-					<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true">
-						<form name="challenge3_1" id="challenge3_1">
-							<p>How many lines are there in the log file?</p>
-							<label for="flag3_1">Enter your answer here: </label>
-							<input type="text" id="flag3_1" name="flag3_1" class="textbox ctf-answer" placeholder="Total Lines">
-							<button type="button" id="q3_1" class="enter ctf-submit">Submit</button>
-							<br>
-							<br>
-							<button type="button" id="btnHint3_1" class="hints ctf-hint">Hint</button>
-							<p id="hint3_1" class="hint">Command Line Tool <b>wc</b></p>
-						</form>
-					</div>
-					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Question 2</h2>
-					<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true">
-						<form name="challenge3_2" id="challenge3_2">
-							<p>How many Unique IP's are there in the log file?</p>
-							<label for="flag3_2">Enter your answer here: </label>
-							<input type="text" id="flag3_2" name="flag3_2" class="textbox ctf-answer" placeholder="Uniqe IP's">
-							<button type="button" id="q3_2" class="enter ctf-submit">Submit</button>
-							<br>
-							<br>
-							<button type="button" id="btnHint3_2" class="hints ctf-hint">Hint</button>
-							<p id="hint3_2" class="hint">Command Line Tool <b>cat, cut uniq</b></p>
-						</form>
-					</div>
-					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Question 3</h2>
-					<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true">
-						<form name="challenge3_3" id="challenge3_3">
-							<p>What is the IP address from which the server got more traffic from?</p>
-							<label for="flag3_3">Enter your answer here: </label>
-							<input type="text" id="flag3_3" name="flag3_3" class="textbox ctf-answer" placeholder="Most Hit IP">
-							<button type="button" id="q3_3" class="enter ctf-submit">Submit</button>
-							<br>
-							<br>
-							<button type="button" id="btnHint3_3" class="hints ctf-hint">Hint</button>
-							<p id="hint3_3" class="hint">Command Line Tool <b>cat, cut, sort, uniq</b></p>
-						</form>
-					</div>
-					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Question 4</h2>
-					<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true">
-						<form name="challenge3_4" id="challenge3_4">
-							<p>What is the URL which was most visited?</p>
-							<label for="flag3_4">Enter your answer here: </label>
-							<input type="text" id="flag3_4" name="flag3_4" class="textbox ctf-answer" placeholder="Most Visited URL">
-							<button type="button" id="q3_4" class="enter ctf-submit">Submit</button>
-							<br>
-							<br>
-							<button type="button" id="btnHint3_3" class="hints ctf-hint">Hint</button>
-							<p id="hint3_4" class="hint">Command Line Tool <b>cat, cut, sort, uniq</b></p>
-						</form>
-					</div>
-					<h2 class="ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Question 5</h2>
-					<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true">
-						<form name="challenge3_5" id="challenge3_5">
-							<p>What is the Total count of requests which got a 200 response?</p>
-							<label for="flag3_5">Enter your answer here: </label>
-							<input type="text" id="flag3_5" name="flag3_5" class="textbox ctf-answer" placeholder="Total 200 responses">
-							<button type="button" id="q3_5" class="enter ctf-submit">Submit</button>
-							<br>
-							<br>
-							<button type="button" id="btnHint3_5" class="hints ctf-hint">Hint</button>
-							<p id="hint3_5" class="hint">Command Line Tool <b>cat, cut, sort, uniq</b></p>
-						</form>
-					</div>
-				</div>
-			</div>
-			<h2 class="h2 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><b>Challenge 4: Cryptography</b></h2>
-			<div style="display: none;" class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
-				<form name="challenge2" id="challenge2">
-					<p>Alice just sent a secret message to Bob, can you find out what they were trying to communicate? </p>
-					<p>Encrypted Message: o3Ss0_i0I</p>
-					<label for="flag2">Enter Text Here: </label>
-					<input type="text" id="flag2" name="flag2" class="textbox ctf-answer" placeholder="Plain Text">
-					<button type="button" id="q2" class="enter ctf-submit">Submit</button>
-					<br>
-					<br>
-					<button type="button" id="btnHint2" class="hints ctf-hint">Hint</button>
-					<p id="hint2" class="hint">This text is encoded using a popular Encryption technique</p>
-				</form>
-			</div>
-		</div>
-		<p style="font-size: 18px;">More challenges are on the way...</p>
-	</main>
-	<footer>
-		<div> <img class="unc-logo" src="charlotte.png" alt="logo">
-			<p>© <span id="date"></span> 49<sup>th</sup> Security Division</p>
-		</div>
-	</footer>
-
-
-
-
-<script src="Mini%20Challenges_files/app.js" type="text/javascript"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
-<!--I've been working on something called the fun zone... try./fun ~ Wes-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('q2d').addEventListener('click', function() {
+            var answer = document.getElementById('flagd').value;
+            if (answer === 'u_R_H@ck3r') {
+                alert('Correct!'); // Replace with your success handling logic
+            } else {
+                alert('Incorrect. Try again.'); // Replace with your failure handling logic
+            }
+        });
+    });
+    </script>
+</body>
+</html>
