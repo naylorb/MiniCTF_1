@@ -27,8 +27,6 @@ const FLAG_DIGESTS = {
 		"tSEyMD1ja0MxqEBUKVYoBaZn0Ay7c7wzyr3N1L/Opw==",
 	q3_5:	"JwBtGiS5S5PWV0G1OSXsTZG2OBSobj65oQMfWVEaOvCP"+
 		"flQwf6vsmlnkqpMj0LpO9uWYbiEG4PWOCpwrQMsEdw==",
-	//q4:	"rSisWE68iSM7xn9+6+ReJHxjCNmFUV8BR+X+RIriWSf7"+
-	//	"AFqBXq89flwbrAX6ZqVMDVO0wUpZq6ajsjDVtuAPfw==",
 	q4:     "rSisWE68iSM7xn9+6+ReJHxjCNmFUV8BR+X+RIriWSf7AFqBXq89flwbrAX6ZqVMDVO0wUpZq6ajsjDVtuAPfw=="
 };
 
@@ -95,16 +93,26 @@ $(document).ready(function(){
 		var id = $(object).attr('id');
 		var flag = $(object).prev('input').val();
 
-		var digest = await getDigest(flag);
-		var correct_digest = base64ToBytes(FLAG_DIGESTS[id]);
-
-		$(object).prev('input').val('');
-
-		if (digestsAreEqual(digest, correct_digest)) {
-			alert('Congrats! You have completed this challenge.');
-			$(object).prev('input').attr('placeholder', 'Correct!');
+		if (id === 'q4') {
+			if (flag === 'h3Ll0_b0B') { // Direct comparison for q4
+				alert('Congrats! You have completed this challenge.');
+				$(object).prev('input').attr('placeholder', 'Correct!');
+			} else {
+				$(object).prev('input').attr('placeholder', 'Incorrect');
+			}
 		} else {
-			$(object).prev('input').attr('placeholder', 'Incorrect');
+			// Original digest-based checking for other questions
+			var digest = await getDigest(flag);
+			var correct_digest = base64ToBytes(FLAG_DIGESTS[id]);
+
+			$(object).prev('input').val('');
+
+			if (digestsAreEqual(digest, correct_digest)) {
+				alert('Congrats! You have completed this challenge.');
+				$(object).prev('input').attr('placeholder', 'Correct!');
+			} else {
+				$(object).prev('input').attr('placeholder', 'Incorrect');
+			}
 		}
 	}
 	
