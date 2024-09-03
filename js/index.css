@@ -1,37 +1,41 @@
-/* Container for the cards to be displayed side by side */
+/* Container to hold the cards side by side */
 .card-container {
-    display: flex;
-    gap: 1rem; /* Space between cards */
-    flex-wrap: wrap; /* Wraps cards to next line if necessary */
-    justify-content: center; /* Center align cards horizontally */
+  display: flex;
+  gap: 1rem; /* Adjust spacing between cards as needed */
+  flex-wrap: wrap; /* Allows wrapping if there isn't enough space */
+  justify-content: center; /* Centers cards horizontally */
 }
 
-/* Style for individual cards */
-.card {
-    width: 18rem; /* Width of the card */
-    background-color: #4a5568; /* Background color of the card */
-    padding: 1rem; /* Padding inside the card */
-    border-radius: 0.375rem; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-    transition: transform 0.3s ease-in-out; /* Transition effect on hover */
-    border: 1px solid black; /* Border color */
+/* Styling for individual card articles */
+article {
+  width: 45%; /* Adjust width to fit two cards side by side */
+  background-color: #ffffff; /* White background */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid black;
+  color: #000000; /* Black text */
+  font-size: 1rem; /* Adjust font size if needed */
 }
 
-/* Hover effect for cards */
-.card:hover {
-    transform: translateY(-0.5rem); /* Move card up slightly on hover */
+article:hover {
+  transform: translateY(-0.5rem);
 }
 
-/* Style for paragraph text inside cards */
-.card p {
-    font-size: 1.125rem; /* Larger font size */
-    color: white; /* White font color */
-    margin-bottom: 0.5rem; /* Spacing between paragraphs */
+article p {
+  font-size: 1.125rem; /* Bigger font size for paragraphs */
+  color: #000000; /* Black text */
+  margin-bottom: 0.5rem;
 }
 
-/* Remove bottom margin from the last paragraph */
-.card p:last-child {
-    margin-bottom: 0;
+article p:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional styling for the card container */
+.card-container {
+  margin: 1rem auto; /* Center the container */
 }
 div {
     border-radius: 4px; /* Border radius */
