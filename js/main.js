@@ -27,8 +27,9 @@ const FLAG_DIGESTS = {
 		"tSEyMD1ja0MxqEBUKVYoBaZn0Ay7c7wzyr3N1L/Opw==",
 	q3_5:	"JwBtGiS5S5PWV0G1OSXsTZG2OBSobj65oQMfWVEaOvCP"+
 		"flQwf6vsmlnkqpMj0LpO9uWYbiEG4PWOCpwrQMsEdw==",
-	q4:	"rSisWE68iSM7xn9+6+ReJHxjCNmFUV8BR+X+RIriWSf7"+
-		"AFqBXq89flwbrAX6ZqVMDVO0wUpZq6ajsjDVtuAPfw==",
+	//q4:	"rSisWE68iSM7xn9+6+ReJHxjCNmFUV8BR+X+RIriWSf7"+
+	//	"AFqBXq89flwbrAX6ZqVMDVO0wUpZq6ajsjDVtuAPfw==",
+	q4:     "rSisWE68iSM7xn9+6+ReJHxjCNmFUV8BR+X+RIriWSf7AFqBXq89flwbrAX6ZqVMDVO0wUpZq6ajsjDVtuAPfw=="
 };
 
 /* Convert from a Base64 string to a raw Uint8Array.
