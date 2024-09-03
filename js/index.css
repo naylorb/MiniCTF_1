@@ -1,6 +1,33 @@
-* {
-border-radius: 5px;
+/* Apply styles to all form elements and containers */
+input[type="text"], button, .ui-accordion-content {
+    border-radius: 4px; /* Sets the border radius */
+    background-color: #e0f7fa; /* Light cool blue color */
+    border: 1px solid #b2ebf2; /* Slightly darker blue border */
+    padding: 10px; /* Optional: add some padding for better appearance */
 }
+
+/* Adjust styles for buttons to match the border radius */
+button {
+    border-radius: 4px;
+}
+
+/* Specific styling for hints and hints button */
+.hints {
+    border-radius: 4px;
+    background-color: #b2ebf2; /* Light cool blue color for hint buttons */
+}
+
+/* Adjust the accordion content background */
+.ui-accordion-content {
+    border-radius: 4px;
+    background-color: #e0f7fa; /* Light cool blue color */
+}
+
+/* Ensure that headers and form labels have consistent styling */
+h2, label {
+    color: #00796b; /* Darker teal color for better contrast */
+}
+
 body {
   font-family: monospace, sans-serif !important;
   background-color: #4B0082;
