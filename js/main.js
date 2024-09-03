@@ -93,7 +93,7 @@ $(document).ready(function(){
 		var id = $(object).attr('id');
 		var flag = $(object).prev('input').val();
 
-		if (id === 'q4') {
+		if (id === 'flag2') {
 			if (flag === 'h3Ll0_b0B') { // Direct comparison for q4
 				alert('Congrats! You have completed this challenge.');
 				$(object).prev('input').attr('placeholder', 'Correct!');
