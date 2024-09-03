@@ -1,14 +1,15 @@
-/* Container to hold the cards side by side */
+/* Ensure the container is centered and uses flexbox for card layout */
 .card-container {
   display: flex;
   gap: 1rem; /* Adjust spacing between cards as needed */
   flex-wrap: wrap; /* Allows wrapping if there isn't enough space */
   justify-content: center; /* Centers cards horizontally */
+  padding: 1rem; /* Optional: adjust padding if needed */
 }
 
 /* Styling for individual card articles */
 article {
-  width: 45%; /* Adjust width to fit two cards side by side */
+  width: 300px; /* Fixed width for consistency */
   background-color: #ffffff; /* White background */
   padding: 1rem;
   border-radius: 0.375rem;
@@ -16,7 +17,7 @@ article {
   transition: transform 0.3s ease-in-out;
   border: 1px solid black;
   color: #000000; /* Black text */
-  font-size: 1rem; /* Adjust font size if needed */
+  font-size: 1rem; /* Base font size */
 }
 
 article:hover {
@@ -37,11 +38,14 @@ article p:last-child {
 .card-container {
   margin: 1rem auto; /* Center the container */
 }
+
+/* Ensure divs have consistent styling */
 div {
-    border-radius: 4px; /* Border radius */
-    padding: 10px; /* Optional: adjust padding if needed */
+  border-radius: 4px; /* Border radius */
+  padding: 10px; /* Optional: adjust padding if needed */
 }
 
+/* Body styling */
 body {
   font-family: monospace, sans-serif !important;
   background-color: #333333;
@@ -83,7 +87,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-hr {  
+hr {
   border: 2px solid #ddd;
   margin: 2rem auto;
 }
@@ -101,10 +105,12 @@ a {
   text-decoration: none;
   outline: 0;
 }
+
 a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .logo {
   max-width: 17vh;
 }
@@ -179,5 +185,3 @@ p {
   background: #fffaf8 !important;
   color: black !important;
 }
-
-
