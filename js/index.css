@@ -1,9 +1,7 @@
-/* Apply light blue background and border radius to all surrounding divs */
 div {
     border-radius: 4px; /* Border radius */
     padding: 10px; /* Optional: adjust padding if needed */
 }
-
 
 body {
   font-family: monospace, sans-serif !important;
