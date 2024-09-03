@@ -1,0 +1,136 @@
+body {
+  font-family: monospace, sans-serif !important;
+  background-color: #fffaf8;
+  line-height: 1.3;
+}
+
+#backgroundImage {
+  position: relative;
+}
+
+#backgroundImage:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(49sd_compressed.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.06;
+  filter: alpha(opacity=40);
+}
+
+main {
+  max-width: 70ch;
+  padding: 2ch;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+hr {  
+  border: 2px solid #ddd;
+  margin: 2rem auto;
+}
+
+footer {
+  opacity: 0.75;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+a {
+  color: #ff3c3c !important;
+  text-decoration: none;
+  outline: 0;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.logo {
+  max-width: 17vh;
+}
+
+.unc-logo {
+  max-width: 5vh !important;
+}
+
+p.hint {
+  display: none;
+  line-break: anywhere;
+}
+
+p {
+  justify-content: center;
+}
+
+.ctf-answer {
+  text-align: center;
+  width: 30%;
+  height: 21px;
+  border-radius: 5px;
+  font-family: monospace, sans-serif;
+  background-color: #fffaf8;
+  border-color: black;
+}
+
+.ctf-submit,
+.ctf-hint {
+  cursor: pointer;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 5px 20px;
+  font-family: monospace, sans-serif;
+  color: #fffaf8;
+  background-color: black;
+  font-size: 14px;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.ctf-submit:hover,
+.ctf-hint:hover {
+  background-color: #fffaf8;
+  color: black;
+  border-style: solid;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.section-item-title-icon {
+  font-size: 10px;
+}
+
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-family: monospace, sans-serif !important;
+  font-size: 14px !important;
+}
+
+.ui-state-default,
+.ui-widget-content {
+  background: #fffaf8 !important;
+  color: black !important;
+}
