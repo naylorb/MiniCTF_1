@@ -5,32 +5,10 @@ div {
     padding: 10px; /* Optional: adjust padding if needed */
 }
 
-/* Ensure input boxes and captions retain their current styles */
-input.textbox, label {
-    background-color: #fff; /* White background for input boxes */
-    border: 1px solid #ccc; /* Light gray border for input boxes */
-    color: #000; /* Black text color */
-}
-
-/* Maintain the style for buttons and other elements */
-button {
-    background-color: #007bff; /* Default button color */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px; /* Matching border radius for buttons */
-}
-
 
 body {
   font-family: monospace, sans-serif !important;
-  background-color: #6643b5;
+  background-color: #333333;
   color: #F8F8FF;
   line-height: 1.3;
 }
