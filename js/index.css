@@ -9,7 +9,7 @@
 
 /* Styling for individual card articles */
 article {
-  width: 1200px; /* Increased width for wider articles */
+  width: 1500px; /* Increased width for wider articles */
   background-color: #ffffff; /* White background */
   padding: 1rem;
   border-radius: 0.375rem;
@@ -20,6 +20,7 @@ article {
   font-family: Helvetica, Arial, sans-serif; /* Modern font for article text */
   font-size: 1rem; /* Base font size */
   margin-right: 1rem; /* Space between articles */
+  text-align: center; /* Center text within the article */
 }
 
 article:last-child {
